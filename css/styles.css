@@ -1,0 +1,20 @@
+:root {
+  --bosque: #1e3a2f;
+  --niebla: #edf1ec;
+  --cereza: #b23a36;
+  --hoja: #4c7a3b;
+  --tinta: #1c2420;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--tinta);
+}
+
+/* tipografía */
+h1, h2, h3, .uk-logo, .uk-card-title { font-family: 'Young Serif', serif; font-weight: 400; color: var(--bosque); }
+.uk-heading-medium { font-size: clamp(2.6rem, 6vw, 3.8rem); line-height: 1.15; }
+h2 { font-size: clamp(2rem, 4vw, 2.6rem); }
+.uk-text-lead { font-size: 1.2rem; color: var(--tinta); }
+a { color: var(--cereza); }
+a:hover { color: var(--bosque); }
