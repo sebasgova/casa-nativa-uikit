@@ -35,3 +35,7 @@ a:hover { color: var(--bosque); }
 .uk-navbar-nav > li > a:hover { color: var(--cereza); }
 .uk-navbar-toggle { color: var(--bosque); }
 .uk-offcanvas-bar { background: var(--bosque); }
+
+/* hero */
+.hero { background: var(--niebla); }
+.uk-label { background: var(--hoja); text-transform: none; font-size: .9rem; padding: 4px 14px; border-radius: 20px; }
