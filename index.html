@@ -37,10 +37,31 @@
           </div>
         </div>
 
+          <!-- Botón del menú móvil -->
+          <div class="uk-navbar-right uk-hidden@m">
+            <a class="uk-navbar-toggle" href="#" uk-navbar-toggle-icon uk-toggle="target: #menu-movil" aria-label="Abrir menú"></a>
+          </div>
+
       </nav>
     </div>
   </div>
 </header>
+
+  <!-- Menú móvil (ofcanvas de UIkit)-->
+  <div id="menu-movil" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+      <button class="uk-offcanvas-close" type="button" uk-close aria-label="Cerrar menú"></button>
+      <ul class="uk-nav uk-nav-default">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#reserva">Reserva</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a class="uk-button uk-button-primary uk-margin-medium-top" href="#reserva">Reservar ahora</a>
+    </div>
+  </div>
+
 <!-- UIkit JS y Anime.js -->
 <script src="libs/uikit.min.js"></script>
 <script src="libs/anime.min.js"></script>
