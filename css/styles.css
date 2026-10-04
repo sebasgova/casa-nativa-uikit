@@ -18,3 +18,18 @@ h2 { font-size: clamp(2rem, 4vw, 2.6rem); }
 .uk-text-lead { font-size: 1.2rem; color: var(--tinta); }
 a { color: var(--cereza); }
 a:hover { color: var(--bosque); }
+
+/* Botones */
+.uk-button {
+  text-transform: none; font-size: 1rem; font-weight: 600; border-radius: 6px;
+  line-height: 46px;
+}
+.uk-button-primary { background: var(--cereza); color: #fff; }
+.uk-button-primary:hover, .uk-button-primary:focus { background: var(--bosque); color: #fff; }
+.uk-button-default { border-color: var(--bosque); color: var(--bosque); }
+.uk-button-default:hover, .uk-button-default:focus { background: var(--bosque); color: #fff; border-color: var(--bosque); }
+
+/* Navbar */
+.uk-logo { font-size: 1.6rem; }
+.uk-navbar-nav > li > a { text-transform: none; font-size: 1rem; color: var(--tinta); }
+.uk-navbar-nav > li > a:hover { color: var(--cereza); }

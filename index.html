@@ -13,6 +13,34 @@
   <link rel="stylesheet" href="libs/uikit.min.css">
 </head>
 <body>
+  <!-- A. header -->
+<header uk-sticky>
+  <div class="uk-navbar-container" id="inicio">
+    <div class="uk-container">
+      <nav uk-navbar>
+
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="#inicio">Casa Nativa</a>
+        </div>
+
+        <!-- menú de escritorio -->
+        <div class="uk-navbar-right uk-visible@m">
+          <ul class="uk-navbar-nav">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#reserva">Reserva</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <div class="uk-navbar-item">
+            <a class="uk-button uk-button-primary" href="#reserva">Reservar ahora</a>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+</header>
 <!-- UIkit JS y Anime.js -->
 <script src="libs/uikit.min.js"></script>
 <script src="libs/anime.min.js"></script>
