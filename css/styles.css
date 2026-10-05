@@ -44,3 +44,9 @@ a:hover { color: var(--bosque); }
 
 /* servicios */
 .service-card { border-top: 4px solid var(--hoja); border-radius: 6px; }
+
+/* Reserva */
+.reserva { background: var(--bosque); }
+.reserva .uk-light h2 { color: #fff; }
+.uk-form-label { font-weight: 600; margin-bottom: 4px; }
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus { border-color: var(--hoja); }
