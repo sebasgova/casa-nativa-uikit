@@ -9,6 +9,8 @@
 html {
   font-family: 'Work Sans', sans-serif;
   color: var(--tinta);
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 /* tipografía */
