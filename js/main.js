@@ -62,6 +62,13 @@ observador.observe(grilla);
 
 const formulario = document.getElementById('form-reserva');
 const mensajeForm = document.getElementById('form-msg');
+const llegada = document.getElementById('llegada');
+const salida = document.getElementById('salida');
+
+// la salida no puede ser antes de la llegada
+llegada.addEventListener('change', function () {
+  salida.min = llegada.value;
+});
 
 formulario.addEventListener('submit', function (e) {
   e.preventDefault(); //
