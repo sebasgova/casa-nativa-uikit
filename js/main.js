@@ -32,3 +32,28 @@ document.querySelectorAll('#menu-movil a').forEach(function (enlace) {
     UIkit.offcanvas('#menu-movil').hide();
   });
 });
+
+/*servicios*/
+
+// las tarjetas entran escalonadas cuando la sección aparece en pantalla
+const tarjetas = document.querySelectorAll('.service-card');
+const grilla = document.getElementById('servicios-grid');
+
+anime.set(tarjetas, { opacity: 0, translateY: 60 });
+
+const observador = new IntersectionObserver(function (entradas) {
+  if (entradas[0].isIntersecting) {
+    anime({
+      targets: tarjetas,
+      opacity: 1,
+      translateY: 0,
+      delay: anime.stagger(200),
+      duration: 900,
+      easing: 'easeOutCubic'
+    });
+
+    observador.disconnect();
+  }
+}, { threshold: 0.15 });
+
+observador.observe(grilla);
