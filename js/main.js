@@ -57,3 +57,14 @@ const observador = new IntersectionObserver(function (entradas) {
 }, { threshold: 0.15 });
 
 observador.observe(grilla);
+
+/*formulario*/
+
+const formulario = document.getElementById('form-reserva');
+const mensajeForm = document.getElementById('form-msg');
+
+formulario.addEventListener('submit', function (e) {
+  e.preventDefault(); //
+  mensajeForm.hidden = false;
+  formulario.reset();
+});
