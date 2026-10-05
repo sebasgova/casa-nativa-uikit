@@ -39,3 +39,6 @@ a:hover { color: var(--bosque); }
 /* hero */
 .hero { background: var(--niebla); }
 .uk-label { background: var(--hoja); text-transform: none; font-size: .9rem; padding: 4px 14px; border-radius: 20px; }
+
+/* servicios */
+.service-card { border-top: 4px solid var(--hoja); border-radius: 6px; }
